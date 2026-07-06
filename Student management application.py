@@ -62,7 +62,7 @@ def main():
     manager = StudentManager()
 
     while True:
-        print("\n--- Student Management System ---")
+        print("\nStudent Management System")
         print("1. Add Student")
         print("2. Remove Student")
         print("3. Update Student")
