@@ -1,10 +1,12 @@
-#Create a class Circle with attribute radius. Add methods area() and circumference(). (Use 3.14159 for pi.)
-class Circle:
-    def __init__(self, radius):
-        self.radius = radius
+class Book:
+    def __init__(self, title, author, isbn):
+        self.title = title        # attribute
+        self.author = author
+        self.isbn = isbn
+        self.is_available = True
 
-    def area(self):
-        return 3.14159 * self.radius ** 2
+    def borrow(self):             # method
+        self.is_available = False
 
-    def circumference(self):
-        return 2 * 3.14159 * self.radius
+    def return_book(self):
+        self.is_available = True
